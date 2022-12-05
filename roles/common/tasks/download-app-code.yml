@@ -1,7 +1,7 @@
 - name: Add Roboshop Application User
   when: APP_USER is defined
   ansible.builtin.user:
-    name: " {{ APP_USER }}"
+    name: "{{ APP_USER }}"
 
 
 - name: Download App Content
@@ -11,12 +11,12 @@
 
 - name: Remove Previous Version of App
   ansible.builtin.file:
-    path: {{ APP_LOC }}
+    path: "{{ APP_LOC }}"
     state: absent
 
 - name: Create App Directory
   ansible.builtin.file:
-    path: {{ APP_LOC }}
+    path: "{{ APP_LOC }}"
     state: directory
 
 - name: Download App Content & Extracting File
