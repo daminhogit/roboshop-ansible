@@ -1,4 +1,4 @@
-- name: Create All Robosshop Parameters
+- name: Create All Roboshop Parameters
   hosts: localhost
   tasks:
     - name: Create value
